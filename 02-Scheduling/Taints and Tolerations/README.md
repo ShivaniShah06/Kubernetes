@@ -22,9 +22,9 @@
   
 - The taint effect defines what would happen to the pods if they do not tolerate the taint.
 - There are 3 taint effects
-  - **`NoSchedule`**
-  - **`PreferNoSchedule`**
-  - **`NoExecute`**
+  - **`NoSchedule`** : No new pod will be scheduled on the node unless it has matching tolerations.
+  - **`PreferNoSchedule`**: It will be preferred that pod with no matching tolerations does not get scheduled but not guranteed.
+  - **`NoExecute`**: Existing pods will be evicted if do not contain matching tolerations.
   
   ![alt text](t2.png)
   
