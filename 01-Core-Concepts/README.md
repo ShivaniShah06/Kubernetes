@@ -10,6 +10,7 @@
 - Worker nodes have following components:
    - Kubelet
    - Kube-proxy
+   - Container Runtime (docker or similar)
 
 
   ![alt text](architecture.png)
